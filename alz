@@ -1,10 +1,11 @@
 # BOSS?!?!?!?!?! bat mo to inopen boss???? WAG KA D2 MAG OPEN, CODE LNG ETO!!! SUNDAN MO MABUTI YUNG TUTORIAL, WAG TNGA TNGA
 
 
+
 if (-not $args) {
     Write-Host ''
-    Write-Host 'Need help? Chat us on our shop!: ' -NoNewline
-    Write-Host 'https://alzshop.carrd.co/' -ForegroundColor Green
+    Write-Host 'Need help? Check our homepage: ' -NoNewline
+    Write-Host 'https://massgrave.dev' -ForegroundColor Green
     Write-Host ''
 }
 
@@ -52,9 +53,9 @@ if (-not $args) {
     try { [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 } catch {}
 
     $URLs = @(
-        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/ab6b572af940fa0ea4255b327eb6f69a274d6725/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=ab6b572af940fa0ea4255b327eb6f69a274d6725',
-        'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/ab6b572af940fa0ea4255b327eb6f69a274d6725/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
+        'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/da0b2800d9c783e63af33a6178267ac2201adb2a/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
+        'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=da0b2800d9c783e63af33a6178267ac2201adb2a',
+        'https://git.activated.win/Microsoft-Activation-Scripts/plain/MAS/All-In-One-Version-KL/MAS_AIO.cmd?id=da0b2800d9c783e63af33a6178267ac2201adb2a'
     )
     Write-Progress -Activity "Downloading..." -Status "Please wait"
     $errors = @()
@@ -87,7 +88,7 @@ if (-not $args) {
     }
 
     # Verify script integrity
-    $releaseHash = 'D60752A27BDED6887C5CEC88503F0F975ACB5BC849673693CA7BA7C95BCB3EF4'
+    $releaseHash = '22D51870447129A730A66887C6E48B83B4B8B230CDC10E24597BA1CB0F471864'
     $stream = New-Object IO.MemoryStream
     $writer = New-Object IO.StreamWriter $stream
     $writer.Write($response)
@@ -136,3 +137,4 @@ if (-not $args) {
     $FilePaths = @("$env:SystemRoot\Temp\MAS*.cmd", "$env:USERPROFILE\AppData\Local\Temp\MAS*.cmd")
     foreach ($FilePath in $FilePaths) { Get-Item $FilePath -ErrorAction SilentlyContinue | Remove-Item }
 } @args
+
