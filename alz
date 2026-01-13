@@ -1,4 +1,4 @@
-# BOSS?!?!?!?!?! bat mo to inopen boss???? WAG KA D2 MAG OPEN, CODE LNG ETO!!! SUNDAN MO MABUTI YUNG TUTORIAL, WAG TNGA TNGA
+#Wag mo to i-open boss???? CODE LNG ETO!!! SUNDAN MO MABUTI YUNG TUTORIAL, WAG TNGA TNGA
 
 if (-not $args) {
     Write-Host ''
