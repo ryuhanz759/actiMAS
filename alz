@@ -1,4 +1,7 @@
 #Wag mo to i-open boss???? CODE LNG ETO!!! SUNDAN MO MABUTI YUNG TUTORIAL, WAG TNGA TNGA
+
+
+
 if (-not $args) {
     Write-Host ''
     Write-Host 'Need help? Check our homepage: ' -NoNewline
