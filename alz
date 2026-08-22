@@ -2,8 +2,8 @@
 
 if (-not $args) {
     Write-Host
-    Write-Host 'Need help? Check our homepage: ' -NoNewline
-    Write-Host 'https://massgrave.dev' -ForegroundColor Green
+    Write-Host 'Make SURE pinanood nyo yung tutorial para mag-activate. For our website, visit: ' -NoNewline
+    Write-Host 'https://alzshop.carrd.co/ -ForegroundColor Green
     Write-Host
 }
 
